@@ -1,8 +1,13 @@
-const express = require('express');
+const express = require("express");
 const app = express();
+const path = require("path");
+const port = process.env.PORT || 80;
+const staticpath = path.join(__dirname, "/");
 
-app.get('/',(req, res)=>{
-    res.send("/index.html");
+app.use(express.static(staticpath));
+
+app.get("/", function (req, res) {
+  res.sendFile(staticpath + "/index.html");
 });
 
-app.listen(process.env.PORT || 8080);
+app.listen(port);
