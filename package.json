@@ -1,0 +1,22 @@
+{
+  "name": "whoiswizman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rofiansyah/whoiswizman.git"
+  },
+  "author": "Wizman Rofiansyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rofiansyah/whoiswizman/issues"
+  },
+  "homepage": "https://github.com/Rofiansyah/whoiswizman#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
