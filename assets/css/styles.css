@@ -27,8 +27,9 @@
   --h2-font-size: 5rem;
   --h3-font-size: 2rem;
   --normal-font-size: 1.25rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .60rem;
+  --small-font-size: 1rem;
+  --smaller-font-size: .75rem;
+  --smallest-font-size: .5rem;
 }
 @media screen and (min-width: 968px) {
   :root {
@@ -328,27 +329,81 @@ body.dark-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
-  .container {
-    margin-left: 1rem;
-    margin-right: 1rem;
+@media screen and (max-width: 560px) {
+  .filters__content{
+    width: 400px;
+    margin: 1rem auto;
   }
+  .profile__cv{
+    font-size: var(--smaller-font-size);
+  }
+  .filters__project{
+    font-size: var(--smaller-font-size);
+  }
+  .filters__logo{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .filters__content{
+    width: 300px;
+    margin: .5rem auto;
+  }
+  .filters__logo{
+    width: 43px;
+    height: 43px;
+  }
+  .filters__project{
+    font-size: var(--smallest-font-size);
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 968px) {
   .profile__name{
     font-size: var(--normal-font-size);
   }
-  .profile__info {
-    column-gap: 1.5rem;
+  .filters__content{
+    width: 600px;
+    margin: 1rem auto;
   }
-  .profile__buttons {
-    flex-direction: column;
-    row-gap: 1rem;
-  }
-  .skills__box {
-    column-gap: 1rem;
+  .filters__project{
+    font-size: var(--normal-font-size);
+    font-weight: 600;
   }
 }
-/* For medium devices */
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 645px) {
+  .filters__content{
+    width: 500px;
+    margin: 1rem auto;
+  }
+  .filters__project{
+    font-size: var(--small-font-size);
+  }
+  .filters__logo{
+    width: 55px;
+    height: 55px;
+  }
+  .profile__cv{
+    font-size: var(--small-font-size);
+  }
+  .button i {
+    font-size: 1rem;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 968px) {
+  .projects__content,
+  .skills__content {
+    grid-template-columns: repeat(2, 332px);
+  }
+  .skills__content {
+    justify-content: center;
+    column-gap: 3rem;
+  }
   .projects__content {
     grid-template-columns: 332px;
     justify-content: center;
@@ -360,19 +415,6 @@ body.dark-theme {
     width: 700px;
     margin: 1rem auto;
   }
-}
-@media screen and (min-width: 776px) {
-  .projects__content,
-  .skills__content {
-    grid-template-columns: repeat(2, 332px);
-  }
-  .skills__content {
-    justify-content: center;
-    column-gap: 3rem;
-  }
-}
-/* For large devices */
-@media screen and (min-width: 968px) {
   .container {
     margin-left: auto;
     margin-right: auto;
