@@ -328,38 +328,6 @@ body.dark-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
-@media screen and (max-width: 560px) {
-  .filters__content{
-    width: 400px;
-    margin: 1rem auto;
-  }
-  .profile__cv{
-    font-size: var(--smaller-font-size);
-  }
-  .filters__project{
-    font-size: var(--smaller-font-size);
-  }
-  .filters__logo{
-    width: 50px;
-    height: 50px;
-  }
-}
-
-@media screen and (max-width:460px) {
-  .filters__content{
-    width: 300px;
-    margin: .5rem auto;
-  }
-  .filters__logo{
-    width: 43px;
-    height: 43px;
-  }
-  .filters__project{
-    font-size: var(--smallest-font-size);
-  }
-}
-
 /* For medium devices */
 @media screen and (max-width: 968px) {
   .profile__name{
@@ -394,15 +362,42 @@ body.dark-theme {
   }
 }
 
+@media screen and (max-width: 560px) {
+  .filters__content{
+    width: 400px;
+    margin: 1rem auto;
+  }
+  .profile__cv{
+    font-size: var(--smaller-font-size);
+  }
+  .filters__project{
+    font-size: var(--smaller-font-size);
+  }
+  .filters__logo{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .filters__content{
+    width: 300px;
+    margin: .5rem auto;
+  }
+  .filters__logo{
+    width: 43px;
+    height: 43px;
+  }
+  .filters__project{
+    font-size: var(--smallest-font-size);
+  }
+}
+
 /* For large devices */
 @media screen and (min-width: 968px) {
   .projects__content,
   .skills__content {
     grid-template-columns: repeat(2, 332px);
-  }
-  .skills__content {
-    justify-content: center;
-    column-gap: 3rem;
   }
   .projects__content {
     grid-template-columns: 332px;
@@ -455,10 +450,6 @@ body.dark-theme {
   }
   .projects__modal {
     padding: 1.5rem;
-  }
-  .skills__title {
-    font-size: var(--normal-font-size);
-    margin-bottom: 2.5rem;
   }
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
