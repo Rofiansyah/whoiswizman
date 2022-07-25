@@ -341,13 +341,13 @@ a {
   color: #fff;
   padding: .9rem .5rem;
   border-radius: 3rem;
-  transition: .4s;
+  transition: .5s;
 }
 
 .button__hover::after {
   content: '';
   width: 80%;
-  height: 40%;
+  height: 15%;
   background: linear-gradient(80deg, 
             hsl(217, 80%, 80%) 10%, 
             hsl(217, 85%, 70%) 48%);
@@ -360,7 +360,7 @@ a {
   filter: blur(12px);
   z-index: -1;
   opacity: 0;
-  transition: opacity .4s;
+  transition: opacity .5s;
 }
 
 .button__text_hover {
@@ -470,7 +470,23 @@ a {
     font-size: 1rem;
   }
   .button__hover:hover {
-    transform: scale(1);
+    transform: scale(0.8);
+    transition: .5s;
+  }
+  .button__hover:hover .button__cone_hover {
+    transition: .5s;
+  }
+  
+  .button__hover:hover .button__torus_hover {
+    transition: .5s;
+  }
+  
+  .button__hover:hover .button__icosahedron_hover {
+    transition: .5s;
+  }
+  
+  .button__hover:hover .button__sphere_hover {
+    transition: .5s;
   }
 }
 
