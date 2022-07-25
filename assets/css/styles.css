@@ -53,7 +53,10 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.3s; /* For animation dark mode */
+  transition: 0.5s; /* For animation dark mode */
+  height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 h1, h2, h3 {
@@ -444,6 +447,9 @@ a {
     font-size: var(--normal-font-size);
     font-weight: 600;
   }
+  .button__hover:hover {
+    transform: scale(1.338);
+  }
 }
 @media screen and (max-width: 645px) {
   .filters__content{
@@ -464,7 +470,7 @@ a {
     font-size: 1rem;
   }
   .button__hover:hover {
-    transform: scale(1.25);
+    transform: scale(1);
   }
 }
 
