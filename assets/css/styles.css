@@ -464,7 +464,7 @@ a {
     font-size: 1rem;
   }
   .button__hover:hover {
-    transform: scale(1.25);
+    transform: scale(1.4);
   }
 }
 
