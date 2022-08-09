@@ -20,7 +20,6 @@
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: hsl(var(--hue), 100%, 99%);
-  --text-color: hsl(var(--hue), 8%, 45%);
   --input-color: hsl(var(--hue), 70%, 96%);
   --container-color: #fff;
   /*========== Font and typography ==========*/
@@ -194,7 +193,7 @@ img{
   display: block;
   margin: 1rem auto 0;
   background-color: transparent;
-  color: #000;
+  color: var(--popup-close-color);
   font-weight: 500;
 }
 
@@ -238,7 +237,7 @@ img{
 
 .contact__label{
   font-size: var(--smaller-font-size);
-  color: var(--title-color);
+  color: var(--popup-color);
 }
 
 .button-loading{

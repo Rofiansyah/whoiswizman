@@ -20,6 +20,8 @@
   --text-color-light: hsl(var(--hue), 8%, 75%);
   --text-color-lighten: hsl(var(--hue), 8%, 92%);
   --body-color: hsl(var(--hue), 100%, 99%);
+  --popup-color: #000;
+  --popup-close-color: #000;
   --container-color: #fff;
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -97,6 +99,8 @@ body.dark-theme {
   --text-color: hsl(var(--hue), 12%, 75%);
   --body-color: hsl(var(--hue), 40%, 8%);
   --container-color: hsl(var(--hue), 24%, 12%);
+  --popup-color: hsl(var(--hue), 12%, 15%);
+  --popup-close-color: #fff;
 }
 
 /*========== 
